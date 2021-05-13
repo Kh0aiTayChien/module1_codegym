@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Bảng chuyển đổi tiền tệ </h1>
+<label>
+  <input type="text" id="nhapvao">
+</label>
+<select id="danhsach">
+  <option value="vn" id="vn1">đồng việt nam </option>
+  <option value="us" id="usd1"> đồng đô la mỹ </option>
+</select>
+<select id="danhsach1">
+  <option value="vn" id="vn2">đồng việt nam </option>
+  <option value="us" id="usd2"> đồng đô la mỹ </option>
+</select>
+<button onclick="chuyedoi()">chuyển đổi</button>
+<h2 id='ketqua'></h2>
+</body>
+<script>
+
+function chuyedoi() {
+    let a = document.getElementById('nhapvao').value;
+    let b = document.getElementById("danhsach").value;
+    let c = document.getElementById("danhsach1").value;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    if (b === c) {
+        document.getElementById('ketqua').innerText = " Hãy nhập lại điều kiện chọn";
+    }
+    if (b === "us" && c === "vn") {
+        document.getElementById('ketqua').innerHTML = 'Kết quả là ' + a * 23000 + 'VND'
+    }
+    if (b === "vn" && c === "us") {
+        document.getElementById('ketqua').innerHTML = 'Kết quả là ' + a / 23000 + 'USD'
+    }
+}
+</script>
+</html>
