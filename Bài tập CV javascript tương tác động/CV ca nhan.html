@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      background-image: url("https://media.giphy.com/media/1es0si7Tuck5b4LPbm/giphy.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+
+    h1 {
+      font-max-size: xx-large;color: white; text-align: center;
+    }
+    h2 {
+      background: mediumvioletred;
+      color: white;
+    }
+    #chiendeptrai{
+      width:300px; height: 200px;
+    }
+
+  </style>
+</head>
+<body onmouseover="play()">
+<audio id="audio" src="igi3.mp3" autoplay loop></audio>
+
+<h1>CV CỦA TÔI</h1>
+<table border="1" cellspacing="20" align="center" >
+  <colgroup>
+    <col width="80" span="1">
+    <col width="500" span="1">
+    <col width="200" span="1">
+  </colgroup>
+  <tr>
+    <td>
+      <img id="chiendeptrai" src="https://bitly.com.vn/vinnu6">
+
+      <h2 class="info"> THÔNG TIN CÁ NHÂN </h2>;
+      <ul>
+        <li>Họ và tên   : Lê Minh Chiến</li>
+        <li>Sinh năm    : 1994</li>
+        <li>Facebook : facebook/leminhchien</li>
+      </ul>
+      </ul>
+      <h2 class="info"> Sở trường </h2>;
+      <ul>
+        <li>Sáng tạo tập trung</li>
+        <li>Kiên trì lì đòn</li>
+        <li>Nhiệt tình ham học</li>
+      </ul>
+      <h2 class="info"> Sở thích </h2>;
+      <ul>
+        <li>Đá bóng đá cầu</li>
+        <li>Xem phim tán gái</li>
+        <li>Chơi game nghe nhạc</li>
+      </ul>
+    </td>
+    <td>
+      <br><br><br><br><br><br><br>
+      <h2 class="info">Mục tiêu nghề nghiệp</h2>
+      Hoàn thiện kĩ năng bản thân và nâng cao tay nghề. Có khả năng phát triển web full stack từ A-Z. Có thể tự làm
+      và hoàn thiện các trang web và các dự án từ nhỏ đến trung bình. Có thể tự phát triển ứng dụng mobile trong
+      tương lai bằng React.<br><br>
+      <h2 class="info">Học vấn</h2>
+      Học cấp 1 cấp 2 tại trường TH và THCS Cát Linh Đống Đa Hà Nội<br><br>
+      Học cấp 3 tại trường THPT Lê Quý Đôn - Đống Đa Hà Nội<br><br>
+      Học Đại học tại Học Viên Nông nghiệp Việt Nam<br><br>
+      <br><br>
+      <h2 class="info">Kinh nghiệm làm việc</h2>
+      Từ tháng a - tháng y: Làm youtuber<br><br>
+      Từ tháng x - tháng y: Làm phục vụ cho KS Nikko Hà Nội<br><br>
+      Từ tháng y - tháng z: Làm Chess Coach cho Baby ChessVN<br><br>
+      Từ tháng z - tháng w: Làm IT help desk cho VSCB<br><br>
+      Từ tháng w - tháng b: Làm kĩ thuật viên cho Myboss Computer<br><br>
+
+    </td>
+    <th>
+      <h2 class="info">Thông tin liên hệ</h2>
+      <p><strong>Facebook</strong></p>
+      <p><strong>Instagram</strong></p>
+      <p> <strong>Email</strong></p>
+      <p id="phone" onmousemove="phone()" onmouseout="phone1()"> <strong>Phone</strong></p>
+      <p id="diachi" onmousemove="diachi()" onmouseout="diachi1()"> <strong>Địa chỉ</strong></p>
+    </th>
+  </tr>
+
+</table>
+
+
+</body>
+<script>
+  function phone() {
+    document.getElementById('phone').innerHTML="<strong>0976769929</strong>"
+  }
+  function phone1() {
+    document.getElementById('phone').innerHTML="<strong>Phone</strong>"
+  }
+  function diachi() {
+    document.getElementById('diachi').innerHTML="<strong>85 Tôn Đức Thắng Đống Đa Hà Nội</strong>"
+  }
+  function diachi1() {
+    document.getElementById('diachi').innerHTML="<strong>Địa chỉ</strong>"
+  }
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+</script>
+</html>
