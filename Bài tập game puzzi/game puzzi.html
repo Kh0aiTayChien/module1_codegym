@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Lật hình</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<colgroup>
+
+</colgroup>
+<table id="table" align="center">
+    <tr id="tr1">
+        <th><img id="img1" value="a" src=""
+                 onclick="change1()" height="100" width="500"></th>
+    </tr>
+    <tr id="tr2">
+        <th><img id="img2" value="a" src=""
+                 onclick="change2()" height="100" width="500"></th>
+    </tr>
+    <tr id="tr3">
+        <th><img id="img3" value="a" src=""
+                 onclick="change3()" height="100" width="500"></th>
+    </tr>
+    <tr id="tr4">
+        <th><img id="img4" value="a" src=""
+                 onclick="change4()" height="100" width="500"></th>
+    </tr>
+    <tr id="tr5">
+        <th><img id="img5" value="a" src=""
+                 onclick="change5()" height="100" width="500"></th>
+    </tr>
+</table>
+</body>
+<script>
+    let a1 = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+    let b1 = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+    let c1 = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+    let d1 = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+    let e1 = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg"
+
+    let a2 = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+    let b2 = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+    let c2 = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+    let d2 = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+    let e2 = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg"
+
+    let a = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+    let b = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+    let c = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+    let d = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+    let e = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg"
+
+    document.getElementById("img1").src = a
+    document.getElementById("img2").src = b
+    document.getElementById("img3").src = c
+    document.getElementById("img4").src = d
+    document.getElementById("img5").src = e
+
+    let img1 = document.getElementById("img1");
+    let img2 = document.getElementById("img2");
+    let img3 = document.getElementById("img3");
+    let img4 = document.getElementById("img4");
+    let img5 = document.getElementById("img5");
+    function change1() {
+        if (img1.src === a) {
+            img1.src = a1
+        } else if (img1.src === a1) {
+            img1.src = a2
+        } else {
+            img1.src = a
+        }
+        check();
+
+    }
+    function change2(){
+        if (img2.src === b) {
+            img2.src = b1
+        } else if (img2.src === b1) {
+            img2.src = b2
+        } else {
+            img2.src = b
+        }
+        check();
+
+    }
+    function change3(){
+        if (img3.src === c) {
+            img3.src = c1
+        } else if (img3.src === c1) {
+            img3.src = c2
+        } else {
+            img3.src = c
+        }
+        check();
+
+    }
+    function change4(){
+        if (img4.src === d) {
+            img4.src = d1
+        } else if (img4.src === d1) {
+            img4.src = d2
+        } else {
+            img4.src = d
+        }
+        check();
+
+    }
+    function change5(){
+        if (img5.src === e) {
+            img5.src = e1
+        } else if (img5.src === e1) {
+            img5.src = e2
+        } else {
+            img5.src = e
+        }
+        check();
+
+    }
+function check() {
+    if (img1.src === a && img2.src === b && img3.src === c && img4.src === d && img5.src === e) {
+        document.getElementById("table").style.background = "red"
+    }else if (img1.src === a1 && img2.src === b1 && img3.src === c1 && img4.src === d1 && img5.src === e1) {
+        document.getElementById("table").style.background = "red"
+    } else if (img1.src === a2 && img2.src === b2 && img3.src === c2 && img4.src === d2 && img5.src === e2) {
+        document.getElementById("table").style.background = "red"
+    } else {document.getElementById("table").style.background = "white"}
+}
+</script>
+</html>
