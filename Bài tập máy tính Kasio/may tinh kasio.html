@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính Kasio </title>
+<style>
+    .btn{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body bgcolor="#b0c4de">
+<h1 align="center">KASIO CACULATOR</h1>
+
+<form name="maytinh">
+    <table align="center" border="1" width="400" hight="500">
+        <tr >
+            <th><input class="btn" type ='text' name="hienthi" align="center" cols="300px" rows="2" disabled> </input></th>
+        </tr>
+    </table>
+    <table align="center" border="1" width="400" hight="400" bgcolor="orange">
+        <tr>
+
+            <th colspan="3">KASIO COMPUTER</th>
+            <th><button value="AC">AC</button></th>
+
+        <tr>
+            <th><input class= "btn" type="button" name="seven" value="7" onclick="maytinh.hienthi.value += 7"></th>
+            <th><input class= "btn" type="button" name="eight" value="8" onclick="maytinh.hienthi.value += 8"></th>
+            <th><input class= "btn" type="button" name="nine" value="9" onclick="maytinh.hienthi.value += 9"></th>
+            <th><input class= "btn" type="button" name="chia" value="/" onclick="maytinh.hienthi.value += '/'"></th>
+        </tr>
+
+        <tr>
+            <th><input class= "btn" type="button" name="four" value="4" onclick="maytinh.hienthi.value += 4"></th>
+            <th><input class= "btn" type="button" name="five" value="5" onclick="maytinh.hienthi.value += 5"></th>
+            <th><input class= "btn" type="button" name="six" value="6" onclick="maytinh.hienthi.value += 6"></th>
+            <th><input class= "btn" type="button" name="nhan" value="X" onclick="maytinh.hienthi.value += '*'"></th>
+        </tr>
+        <tr>
+            <th><input class= "btn" type="button" name="four" value="1" onclick="maytinh.hienthi.value += 1"></th>
+            <th><input class= "btn" type="button" name="five" value="2" onclick="maytinh.hienthi.value += 2"></th>
+            <th><input class= "btn" type="button" name="six" value="3" onclick="maytinh.hienthi.value += 3"></th>
+            <th><input class= "btn" type="button" name="cong" value="+" onclick="maytinh.hienthi.value += '+'"></th>
+        </tr>
+        <tr>
+            <th><input class= "btn" type="button" name="sokhong" value="0" onclick="maytinh.hienthi.value += 0"></input></th>
+            <th><input class= "btn" type="button" name="daucham" value="." onclick="maytinh.hienthi.value += '.'"></input></th>
+            <th><input class= "btn" type="button" name="ketqua" value="=" onclick="maytinh.hienthi.value = eval(maytinh.hienthi.value)"></th>
+            <th><input class= "btn" type="button" name="tru" value="-" onclick="maytinh.hienthi.value += '-'"></th>
+        </tr>
+    </table>
+</form>
+</table>
+</body>
+</html>
+
