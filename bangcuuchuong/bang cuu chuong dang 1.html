@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangcuuchuong</title>
+</head>
+<body>
+<script>
+  let t;
+   t = "<table border='1' cellspacing='2' cellpadding='3'>";
+  for(i=1;i<=10;i++){
+    t += "<tr>";
+    for(j=1;j<=10;j++){
+      t +="<th>" + i * j + '</th>'
+    }
+    t+="</tr>";
+  }
+  t = t + "</table>";
+  document.write(t);
+
+  let a;
+  let b =1;
+  let c =1;
+  a = "<table border='1' cellspacing='2' cellpadding='3'>";
+  while(b<=10){
+    a += "<tr>"
+    while(c<=10){
+      a+= "<th>" + b + "x" + c + "=" + b * c + '</th>';
+      c++
+    }
+    a+="</tr>";
+    c = 1;
+    b++;
+  }
+  a = a + "</table>";
+  document.write(a);
+</script>
+</body>
+</html>

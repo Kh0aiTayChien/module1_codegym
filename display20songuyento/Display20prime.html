@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtrasonguyento</title>
+</head>
+<body>
+<h1>
+    Display 20 Prime
+</h1>
+
+<script>
+
+
+    let n = 1;
+    let count = 0;
+
+    function kiemtra() {
+        let i = 2;
+        if (n < 2) {
+            return false;
+        } else {
+            while (i < n) {
+                if (n % i === 0) {
+                    return false;
+                }
+                i++;
+            }
+            return true;
+        }
+    }
+
+     while (count < 20) {
+         if (kiemtra() ===true) {
+            document.write(n + ' IsPrime' + '<br>')
+             count++;
+         }
+         n++;
+     }
+
+
+</script>
+</body>
+</html>

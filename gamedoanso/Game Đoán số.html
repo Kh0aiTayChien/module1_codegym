@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Đoán Số</title>
+</head>
+<body>
+<h1> Sổ Xố Kiến Thiết Miền Bắc</h1>
+<button onclick="play()"> PLAY GAME </button>
+<button> STOP PLAY</button>
+<script>
+
+function play() {
+    let input_max = +prompt('Hãy nhập số lớn nhất vào');
+    let input_min = +prompt('Hãy nhập số bé nhất vào');
+    let random = Math.round(Math.random() * (input_max - input_min) + input_min);
+    let count = 0;
+    while (count < 3) {
+        let doan = +prompt('Hãy nhập dự đoán của bạn vào');
+        if (doan === random) {
+            alert(random);
+            alert('Chúc mừng bạn đã trúng thưởng')
+        } else {
+            alert('Chúc bạn may mắn lần sau')
+        }count++;
+    }
+}
+</script>
+</body>
+</html>
